@@ -10,4 +10,6 @@ User.destroy_all
 
 user_1 = User.create(first_name: "Tim", last_name: "Montgomery", username: "Tim", email: "timtest@gmail.com", password: "123")
 
+post_1 = Post.create(title: "testing", content: "just testing some endpoints!", user_id: user_1.id )
+
 puts "Seeding complete!"
