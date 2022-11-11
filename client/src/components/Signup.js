@@ -26,9 +26,9 @@ function Signup() {
       .then((r) => {
         if(r.ok){
           r.json().then(navigate('/login'))
-          alert('Account has been created! Please login with your credential!')
+          alert('Account has been created! Please login with your Username and Password!')
         }else{
-          alert('Account creation failed!, Please try again!')
+          alert('Account creation failed!, please try again!')
         }
       })
   }
@@ -75,7 +75,7 @@ function Signup() {
       <button className='sign_up_btn' type="submit">Register</button>
     </form>
       <br/>
-      <div><Link className='slLink' to='/login'>Already a member? Log in here.</Link></div>
+      <div><Link className='slLink' to='/login'>Already a member? Login here</Link></div>
     </div>
   );
 }
