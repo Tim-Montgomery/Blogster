@@ -7,8 +7,8 @@ export default function Filtered({allPosts}){
     const filtered_by_tags = allPosts.filter(filteredPosts => filteredPosts.tags.map((singleTags) => singleTags.name).includes(filterName))
 
     return(
-        <div>
-        Filter by tags: <input className="search-filter" value={filterName} onChange={(e)=>setFilter(e.target.value)}></input>
+        <div className="search-field">
+        Search Tags: <input className="search-filter" value={filterName} onChange={(e)=>setFilter(e.target.value)}></input>
         {filtered_by_tags.map((single_filtered_by_tags)=>{
             return <div>                      
                         <div className="filtered-result">

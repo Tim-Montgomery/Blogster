@@ -36,7 +36,7 @@ export default function Profile({currentUser}){
     return(
         <div>
             <h1>Hello, {currentUser.username}!</h1>
-            <h3>What's on your mind?</h3>
+            {/* <h3>What's on your mind?</h3> */}
             <div className='postWrapper'>
                 <h2>Previous Posts</h2>
                 <div className='postLists'>

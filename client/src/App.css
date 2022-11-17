@@ -57,9 +57,9 @@ input{
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.01), 0 12px 10px 0 rgba(0,0,0,0.09);
 }
 .sign_up_btn{
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -67,7 +67,7 @@ input{
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   width: 550px;
@@ -83,34 +83,39 @@ input{
 /* Navbar */
 body{
   height: 100vh;
-  background-image: url('https://i.postimg.cc/rmhr1M3T/floating-book.jpg');
-  background-size: contain;
-  /* background-repeat: no-repeat; */
+  background-image: url('https://wallpaperaccess.com/full/6654230.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: sans-serif;
   margin-top: 80px;
   padding: 30px;
 }
 
 main {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .main-logo{
   width: 75px;
   height: 40px;
   margin-left: 10px;
+  margin-right: 20px;
 }
 
 
 .link{
   text-decoration: none;
-  margin: 20px;
+  margin: 50px;
   font-family: 'Oswald', sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 header {
-  background-color: white;
+  background-color: #181a1b;
   position: fixed;
   top: 0;
   left: 0;
@@ -134,8 +139,9 @@ header {
 }
 
 .log_out_btn:hover{
-  background-color: rgb(216, 170, 170);
-  color: azure;
+  background-color: rgb(35, 219, 18);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 header * {
@@ -151,6 +157,10 @@ header * {
 
 .post-form{
   width: 100%;
+}
+
+.recent-posts{
+  margin-left: 20px;
 }
 
 .title-input{
@@ -187,7 +197,7 @@ header * {
 /* Post section */
 .postContainer{
   margin: 20px;
-  background-color: #8d887f;
+  background-color: #181a1b;
   width: 270px;
   height: 275px;
   border-radius: 10px;
@@ -198,17 +208,24 @@ header * {
 
 .postContainer button{
   border: none;
-  text-decoration: underline;
+  margin: 10px;
+  /* text-decoration: underline; */
 }
 
+.postContainer button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 .all-posts-section{
-  width: 90%;
+  width: 100%;
 }
 
 .home-post-container{
   border: 1px groove;
   margin: 20px;
-  background-color: #8d887f;
+  background-color: #181a1b;
   box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -219,14 +236,23 @@ header * {
   text-overflow: ellipsis;
 }
 
+.post-content-home:hover{
+  white-space: normal;
+  /* overflow: scroll; */
+}
+
 .users-posts-content{
+  /* border: 1px groove; */
+  margin: 20px;
+  background-color: #181a1b;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .postLists{
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
 }
 
@@ -255,7 +281,7 @@ header * {
   font-family: 'Tiro Devanagari Sanskrit', serif;
 }
 .landing-message{
-  color: #ffffff;
+  color: #000000;
   margin: 50px;
 }
 .home-link-signup{
@@ -270,12 +296,17 @@ header * {
 
 .search-filter{
   width: 10%;
+  background-color: #181a1b;
+}
+
+.search-field{
+  margin-left: 20px;
 }
 
 
 .filtered-result{
   margin: 20px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 30px;
-  background-color: #61594e;
+  background-color: #181a1b;
 }
