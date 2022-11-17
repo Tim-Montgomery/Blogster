@@ -36,9 +36,9 @@ export default function Profile({currentUser}){
     return(
         <div>
             <h1>Hello, {currentUser.username}!</h1>
-            <h3>What's on your mind today?</h3>
+            {/* <h3>What's on your mind?</h3> */}
             <div className='postWrapper'>
-                <h2>Your Posts</h2>
+                <h2>Previous Posts</h2>
                 <div className='postLists'>
                     {posts && posts?.map((post)=>
                         <PostContainer  key={post.id} post={post} updatePost={updatePost} deletePost={deletePost} />
